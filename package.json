@@ -1,0 +1,10 @@
+{
+  "private":"true",
+  "name": "ndp",
+  "version": "1.0.0",
+  "description": "Here I do exercises from Node.js Design Patterns book.",
+  "type": "module",
+  "keywords": [],
+  "author": "slavamuravey",
+  "license": "ISC"
+}
