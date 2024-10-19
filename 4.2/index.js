@@ -22,7 +22,7 @@ function listNestedFiles(dir, cb) {
 
 const dir = process.argv[2];
 if (!dir) {
-    console.error("directory is not specified");
+    console.error('directory is not specified');
     process.exit(1);
 }
 
