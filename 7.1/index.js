@@ -4,19 +4,19 @@ class ColorConsole {
 
 class RedConsole extends ColorConsole {
     log(data) {
-        console.log("\x1b[31m%s\x1b[0m", data);
+        console.log(`\x1b[31m${data}\x1b[0m`);
     }
 }
 
 class GreenConsole extends ColorConsole {
     log(data) {
-        console.log("\x1b[32m%s\x1b[0m", data);
+        console.log(`\x1b[32m${data}\x1b[0m`);
     }
 }
 
 class BlueConsole extends ColorConsole {
     log(data) {
-        console.log("\x1b[34m%s\x1b[0m", data);
+        console.log(`\x1b[34m${data}\x1b[0m`);
     }
 }
 
