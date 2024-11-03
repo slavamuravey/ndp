@@ -14,7 +14,11 @@ class TaskQueuePC {
                 task => task(), 
                 err => console.error(err)
             )
-            .finally(() => this.consumer());
+            .finally(() => {
+                // We should not return promise here
+                // to prevent problem with infinite recursive promise resolution chains
+                this.consumer();
+            });
     }
   
     getNextTask() {
