@@ -1,8 +1,7 @@
 import { Readable } from 'node:stream';
 import { createServer } from 'node:http';
+import { setTimeout as sleep } from 'node:timers/promises';
 
-const sleep = async (to) => new Promise(resolve => setTimeout(resolve, to));
-    
 async function* createGenerator() {
     const chars = ['!', '@', '#', '$', '%', '^', '&', '*'];
     let currentCharIdx = 0;
